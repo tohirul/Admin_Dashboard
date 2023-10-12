@@ -7,6 +7,7 @@ import Menu from "./components/Menu/Menu";
 import Login from "./pages/Login/Login";
 import "./styles/global.scss";
 import Footer from "./components/Footer/Footer";
+import User from "./pages/User/User";
 
 function App() {
   const Layout = () => {
@@ -34,6 +35,10 @@ function App() {
         { path: "/", element: <Home /> },
         { path: "/users", element: <Users /> },
         { path: "/products", element: <Products /> },
+        {
+          path: "/users/:id",
+          element: <User />,
+        },
       ],
     },
     {
